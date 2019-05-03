@@ -1,0 +1,10 @@
+app:
+  secret: the_secret
+  token-validity-in-seconds: 2592000
+
+spring:
+  mvc:
+    favicon:
+      enabled: false
+  resources:
+    add-mappings: false
