@@ -13,7 +13,6 @@ import {JwtModule} from '@auth0/angular-jwt';
 import {environment} from '../environments/environment';
 import {AuthGuard} from './auth.guard';
 
-
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomePage, canActivate: [AuthGuard]},
@@ -21,7 +20,6 @@ const routes: Routes = [
   {path: 'signup', component: SignupPage},
   {path: '**', redirectTo: '/home'}
 ];
-
 
 export function tokenGetter() {
   return localStorage.getItem('jwt_token');
