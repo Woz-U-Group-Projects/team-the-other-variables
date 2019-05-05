@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="list padding">
+<div class="item item-divider">Show Age</div>
+
+<div class="item range range-positive">
+  18<input type="range" name="age" min="18" max="60" value="25"
+  >60
+</div>
+
+<div class="item item-divider">Show Me</div>
+<ion-item>
+  <ion-label>Men</ion-label>
+  <ion-toggle enabled checked="false"></ion-toggle>
+</ion-item>
+<ion-item>
+  <ion-label>Women</ion-label>
+  <ion-toggle enabled checked="true"></ion-toggle>
+</ion-item>
+
+
+<button ion-button color="danger">Logout</button>
+
+
+
+</div>
+</ion-content>
