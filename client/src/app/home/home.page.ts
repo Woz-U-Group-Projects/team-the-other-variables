@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {AuthService} from '../auth.service';
 import {JwtHelperService} from '@auth0/angular-jwt';
 import {environment} from '../../environments/environment';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ export class HomePage implements OnInit {
   user: string;
   message: string;
 
-  constructor(private readonly authService: AuthService,
+  constructor(public afAuth: AngularFireAuth,
+    private readonly authService: AuthService,
               jwtHelper: JwtHelperService,
               private readonly httpClient: HttpClient) {
 
@@ -34,6 +36,12 @@ export class HomePage implements OnInit {
       text => this.message = text,
       err => console.log(err)
     );
+  }
+
+  signOut() {
+    this.afAuth.auth.signOut().then(() => {
+      location.reload();
+    })
   }
 
   logout() {

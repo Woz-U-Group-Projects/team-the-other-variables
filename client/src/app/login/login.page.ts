@@ -1,7 +1,13 @@
-import {Component} from '@angular/core';
+import {Component, NgModule} from '@angular/core';
 import {LoadingController, NavController, ToastController} from '@ionic/angular';
 import {AuthService} from '../auth.service';
 import {finalize} from 'rxjs/operators';
+import {FirebaseUIModule} from 'firebaseui-angular';
+
+@NgModule({
+  imports: [
+    FirebaseUIModule]
+  })
 
 @Component({
   selector: 'app-login',

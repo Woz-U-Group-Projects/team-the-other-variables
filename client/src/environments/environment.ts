@@ -5,7 +5,15 @@
 export const environment = {
   production: false,
   serverURL: 'http://localhost:8080',
-  whitelistedDomains: ['localhost:8080']
+  whitelistedDomains: ['localhost:8080'],
+  firebaseConfig: {
+    apiKey: "AIzaSyD_pezweALi3mQw1GowftbxvvE8fFUrs24",
+    authDomain: "byop-87630.firebaseapp.com",
+    databaseURL: "https://byop-87630.firebaseio.com",
+    projectId: "byop-87630",
+    storageBucket: "byop-87630.appspot.com",
+    messagingSenderId: "509411540811",
+    appId: "1:509411540811:web:bd7a5605fa93b556"}
 };
 
 /*

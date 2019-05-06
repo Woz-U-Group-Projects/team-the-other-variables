@@ -13,9 +13,10 @@
 
 <ion-content padding>
   Welcome <strong>{{user}}</strong>
-
+ <h1 *ngIf="afAuth.auth.currentUser">Hi {{afAuth.auth.currentUser.displayName}}</h1>
   <p>
     Message from the secret service:
     <strong>{{message}}</strong>
   </p>
+  <ion-button *ngIf="afAuth.auth.currentUser" (click)="signOut()">Sign Out</ion-button>
 </ion-content>
