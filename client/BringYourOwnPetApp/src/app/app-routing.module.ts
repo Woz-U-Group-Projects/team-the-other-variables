@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: './profile/profile.module#ProfilePageModule'
   },
   {
+    path: 'matches',
+    loadChildren: './matches/matches.module#MatchesPageModule'
+  },
+  {
     path: 'search',
     loadChildren: './search/search.module#SearchPageModule'
   },

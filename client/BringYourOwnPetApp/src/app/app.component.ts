@@ -21,6 +21,11 @@ export class AppComponent {
       icon: 'person'
     },
     {
+      title: 'Matches',
+      url: '/matches',
+      icon: 'people'
+    },
+    {
       title: 'Search',
       url: '/search',
       icon: 'search'
