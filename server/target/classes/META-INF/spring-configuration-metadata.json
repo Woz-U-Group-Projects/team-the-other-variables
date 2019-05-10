@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "ch.rasc.jwt.AppConfig",
+      "sourceType": "ch.rasc.jwt.AppConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.secret",
+      "type": "java.lang.String",
+      "sourceType": "ch.rasc.jwt.AppConfig"
+    },
+    {
+      "name": "app.token-validity-in-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "ch.rasc.jwt.AppConfig"
+    }
+  ],
+  "hints": []
+}
