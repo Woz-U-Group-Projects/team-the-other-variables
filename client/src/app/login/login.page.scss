@@ -6,3 +6,25 @@
   font-size: 0.8em;
   color: red;
 }
+
+// element.style {
+//   --offset-top: 150px;
+//   --offset-bottom: 150px;
+// }
+
+ion-content {
+  --background: none;
+//  --offset-top:150px;
+//  --offset-bpttom:150px;
+  background-image: url(../../assets/img/doggie2.png); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+// ion-content.background{
+//   --background: url(../../assets/img/doggie.png)  no-repeat center center/ cover;
+// }
+.ion-padding-horizontal {
+  margin: 80px 80px
+}
+
