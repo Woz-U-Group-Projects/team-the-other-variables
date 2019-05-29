@@ -1,4 +1,4 @@
-<ion-header>
+<!--<ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
@@ -7,8 +7,31 @@
         Matches
       </ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header>-->
 
-<ion-content>
-    
-</ion-content>
+  <ion-view view-title="Matches">
+    <ion-content class="padding">
+
+  <td-cards>
+    <td-card id="td-card" class="card-{{$index}}"
+       ng-repeat="profile in matches.profiles"
+       on-swipe-left="matches.nope($index)"
+       on-swipe-right="matches.like($index)">
+
+
+    </td-card>
+
+    <div class="image">
+      <div class="no-text">NOPE</div>
+        <img ng-src="{{profile.avatar}}">
+      <div class="yes-text">LIKE</div>
+      </div>
+
+      <div class="item">
+        <h2>{{profile.name}}, {{profile.age}}</h2>
+      </div>
+
+  </td-cards>
+
+    </ion-content>
+  </ion-view>
