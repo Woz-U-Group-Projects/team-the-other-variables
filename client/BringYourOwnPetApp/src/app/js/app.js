@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.ui.tinderCards'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.tinderCards','ionic.contrib.ui.tinderCards'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function(){
