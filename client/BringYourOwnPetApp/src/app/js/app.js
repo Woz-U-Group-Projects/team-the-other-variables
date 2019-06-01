@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.tinderCards','ionic.contrib.ui.tinderCards'])
+angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ionic.contrib.ui.tinderCards'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function(){
@@ -12,6 +12,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.tinder
         }
     });
 })
+
+.constant('FURL', 'https://byopa-4cb14.firebaseio.com/')
 
 .config(function($stateProvider,$urlRouterProvider){
     $stateProvider
