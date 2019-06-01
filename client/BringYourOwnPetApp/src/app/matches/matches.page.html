@@ -1,4 +1,4 @@
-<!--<ion-header>
+<ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
@@ -7,23 +7,22 @@
         Matches
       </ion-title>
     </ion-toolbar>
-  </ion-header>-->
+  </ion-header>
 
-  <ion-view view-title="Matches">
-    <ion-content class="padding">
+  <!--<ion-view view-title="Matches">
+    <ion-content class="padding">-->
 
-  <td-cards>
-    <td-card id="td-card" class="card-{{$index}}"
-       ng-repeat="profile in matches.profiles"
+  <ion-card>
+    <ion-card id="td-card" class="card-{{$index}}"
+       ngFor="profile in matches.profiles"
        on-swipe-left="matches.nope($index)"
        on-swipe-right="matches.like($index)">
 
-
-    </td-card>
+    </ion-card>
 
     <div class="image">
       <div class="no-text">NOPE</div>
-        <img ng-src="{{profile.avatar}}">
+        <img src="{{profile.avatar}}">
       <div class="yes-text">LIKE</div>
       </div>
 
@@ -31,7 +30,7 @@
         <h2>{{profile.name}}, {{profile.age}}</h2>
       </div>
 
-  </td-cards>
+  </ion-card>
 
-    </ion-content>
-  </ion-view>
+    <!--</ion-content>
+  </ion-view>-->

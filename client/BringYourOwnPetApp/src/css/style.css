@@ -47,11 +47,11 @@
 	font-size: 20px;
 }
 
-td-cards {
+ion-card {
   display: block;
 }
 
-td-card {
+ion-card {
   position: absolute;
   left: 50%;
   margin-top: 80px;
@@ -65,11 +65,11 @@ td-card {
   border-radius: 6px;
 }
 
-td-card .image {
+ion-card .image {
   width: 100%;
 }
 
-td-card img {
+ion-card img {
  	height: 295px;
  	width: 100%;
   border-radius: 6px;
