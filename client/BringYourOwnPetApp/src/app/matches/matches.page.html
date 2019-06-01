@@ -9,9 +9,6 @@
     </ion-toolbar>
   </ion-header>
 
-  <!--<ion-view view-title="Matches">
-    <ion-content class="padding">-->
-
   <ion-card>
     <ion-card id="td-card" class="card-{{$index}}"
        ngFor="profile in matches.profiles"
@@ -24,7 +21,7 @@
       <div class="no-text">NOPE</div>
         <img src="{{profile.avatar}}">
       <div class="yes-text">LIKE</div>
-      </div>
+    </div>
 
       <div class="item">
         <h2>{{profile.name}}, {{profile.age}}</h2>
@@ -32,5 +29,4 @@
 
   </ion-card>
 
-    <!--</ion-content>
-  </ion-view>-->
+  

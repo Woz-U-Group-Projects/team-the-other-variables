@@ -9,6 +9,14 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { SwipeCardsModule } from 'ng2-swipe-cards'
+
+imports: [
+  BrowserModule,
+  IonicModule.forRoot(),
+  SwipeCardsModule
+]
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
