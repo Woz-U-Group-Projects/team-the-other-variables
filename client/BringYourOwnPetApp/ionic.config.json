@@ -1,5 +1,7 @@
 {
   "name": "BringYourOwnPetApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
